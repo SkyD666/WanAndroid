@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frgproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="项目"
+        app:titleTextColor="@color/colorBlack" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorBlue01"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextColor="@color/colorBlue01">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_projectClassify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新项目" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_newProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目分类" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

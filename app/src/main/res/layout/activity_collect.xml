@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:title="我的收藏"
+        app:titleTextColor="@color/colorBlack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_collectArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_collect"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/colorGray04"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

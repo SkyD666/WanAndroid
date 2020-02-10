@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchHotKeyItems"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingTop="3dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="3dp">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text=""
+        android:textSize="15sp" />
+
+</LinearLayout>

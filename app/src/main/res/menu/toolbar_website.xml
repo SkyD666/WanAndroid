@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.skyd.wanandroid.activity.WebsiteActivity">
+
+    <item
+        android:id="@+id/it_addCollection"
+        android:title="添加收藏"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/it_removeCollection"
+        android:title="取消收藏"
+        app:showAsAction="never" />
+</menu>

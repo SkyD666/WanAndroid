@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#828282</color>
+    <color name="colorPrimaryDark">#5e5e5e</color>
+    <color name="colorAccent">#5e5e5e</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAlphaBlack01">#70000000</color>
+    <color name="colorGray01">#778899</color>
+    <color name="colorGray02">#CCCCCC</color>
+    <color name="colorGray03">#EDEDED</color>
+    <color name="colorGray04">#828282</color>
+    <color name="colorGray05">#5e5e5e</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorRed01">#EE0000</color>
+    <color name="colorBlue01">#007fe0</color>
+    <color name="colorBlue02">#30007fe0</color>
+    <color name="flowLayoutItemTextColor">#FFFFFF</color>
+    <color name="flowLayoutItemBackColor">#9D9D9D</color>
+    <color name="colorOrange01">#EE9A00</color>
+</resources>

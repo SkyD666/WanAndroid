@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.skyd.wanandroid.activity.WeChatArticleActivity">
+
+    <item
+        android:id="@+id/it_weChatArticleSearch"
+        android:title="在某个公众号中搜索历史文章"
+        app:showAsAction="ifRoom" />
+
+</menu>

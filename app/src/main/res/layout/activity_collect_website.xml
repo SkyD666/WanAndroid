@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CollectWebsiteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_collectWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:title="我的收藏网站"
+        app:titleTextColor="@color/colorBlack" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_collectWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp">
+
+        <com.skyd.wanandroid.view.FlowLayout
+            android:id="@+id/fl_collectWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:padding="7dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

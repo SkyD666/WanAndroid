@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TODOActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:title="TODO"
+        app:titleTextColor="@color/colorBlack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/colorGray04"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

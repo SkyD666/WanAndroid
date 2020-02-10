@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".fragment.SquareFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="广场"
+        app:titleTextColor="@color/colorBlack" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@color/colorGray04"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

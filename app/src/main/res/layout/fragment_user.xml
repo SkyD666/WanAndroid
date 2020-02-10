@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frguser"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray03"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="我的"
+        app:titleTextColor="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/ll_userInfo"
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal"
+        android:paddingStart="0dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="点击登陆"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_todo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="TODO"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_coin"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="我的积分"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_collect"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="我的收藏文章"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_collectWebsite"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_collectWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="我的收藏网站"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_signOut"
+        android:layout_width="match_parent"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ripple_color_water"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_signOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="退出登录"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

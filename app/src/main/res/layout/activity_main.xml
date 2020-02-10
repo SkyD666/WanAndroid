@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tabs"
+        android:background="@color/transparent" />
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray03"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/TabRadioButton"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/home_grey"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/tab_tree"
+            style="@style/TabRadioButton"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tree_grey"
+            android:text="体系" />
+
+        <RadioButton
+            android:id="@+id/tab_project"
+            style="@style/TabRadioButton"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/project_grey"
+            android:text="项目" />
+
+        <RadioButton
+            android:id="@+id/tab_square"
+            style="@style/TabRadioButton"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/square_grey"
+            android:text="广场" />
+
+        <RadioButton
+            android:id="@+id/tab_user"
+            style="@style/TabRadioButton"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/user_2_grey"
+            android:text="我的" />
+    </RadioGroup>
+</RelativeLayout>

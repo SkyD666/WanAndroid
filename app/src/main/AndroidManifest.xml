@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skyd.wanandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WeChatArticleActivity"></activity>
+        <activity android:name=".activity.TODOActivity" />
+        <activity android:name=".activity.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SquareUsersShareArticlesActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.CoinRankActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.CoinActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.CollectWebsiteActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.NaviActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.ProjectListActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.FriendWebsiteActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.CollectActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.LogInActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.WebsiteActivity"
+            android:configChanges="orientation|screenSize" /> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"> <!-- 此句防止防止屏幕旋转之后Activity销毁和重建, 保证页面加载无错误 -->
+        </activity>
+    </application>
+
+</manifest>

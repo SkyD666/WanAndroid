@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="TODOType">
+        <item>只用这一个</item>
+        <item>工作</item>
+        <item>学习</item>
+        <item>生活</item>
+        <item>娱乐</item>
+    </string-array>
+
+</resources>

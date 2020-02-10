@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.skyd.wanandroid.fragment.HomeFragment">
+
+    <item
+        android:id="@+id/it_bannerController"
+        android:title="收起轮播"
+        android:icon="@drawable/banner_controller_1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/it_search"
+        android:icon="@drawable/search"
+        android:title="搜索"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/it_weChatArticle"
+        android:title="公众号"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/it_friendWebsite"
+        android:title="常用网站"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/it_navi"
+        android:title="导航"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/it_questionAnswer"
+        android:title="问答"
+        app:showAsAction="never" />
+
+</menu>

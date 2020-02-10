@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_coinRankUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="6dp"
+        android:text="username"
+        android:textColor="@color/colorBlue01"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_coinRankId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="123456"
+        android:textColor="@color/colorGray01"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_coinRankUsername"
+        app:layout_constraintLeft_toRightOf="@id/tv_coinRankUsername" />
+
+    <TextView
+        android:id="@+id/tv_coinRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="1"
+        android:textColor="@color/colorGray04"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_coinRankLevel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_coinRankUsername" />
+
+    <TextView
+        android:id="@+id/tv_coinRankLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="70"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_coinRankUsername" />
+
+    <TextView
+        android:id="@+id/tv_coinRankCoinCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="7889"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_coinRankLevel"
+        app:layout_constraintTop_toBottomOf="@id/tv_coinRankUsername" />
+
+    <ImageView
+        android:id="@+id/iv_coinRankLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:src="@color/colorGray02"
+        android:textColor="@color/colorGray01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
