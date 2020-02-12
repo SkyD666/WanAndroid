@@ -8,5 +8,6 @@
         android:id="@+id/sv_tree"
         android:title="按作者搜索文章"
         app:actionViewClass="android.widget.SearchView"
+
         app:showAsAction="always" />
 </menu>

@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -82,10 +83,13 @@ public class TreeFragment extends Fragment {            //与navi导航结构一
         inflater.inflate(R.menu.toolbar_tree, menu);
         //得到SearchView对象，SearchView一些属性可以直接使用，比如：setSubmitButtonEnabled，setQueryHint等
         searchView = view.findViewById(R.id.sv_tree);
+        searchView.setFocusable(true);
+        searchView.setFocusableInTouchMode(true);
         searchView.setQueryHint("按作者搜索文章");
         //如果想单独对SearchView定制，比如需要更换搜索图标等，可以通过一下代码实现。
-        searchView.setIconified(false);
+        //searchView.setIconified(false);       //会导致键盘闪一下后消失
         searchView.setSubmitButtonEnabled(true);
+        searchView.setFocusable(false);
         searchView.clearFocus();
         searchView.onActionViewCollapsed();
         searchView.setImeOptions(EditorInfo.IME_ACTION_SEARCH);         //输入法回车搜索

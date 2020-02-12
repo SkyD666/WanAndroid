@@ -136,9 +136,7 @@ public class LogInActivity extends AppCompatActivity {
                     }
                 }
             }
-        }).
-
-                start();
+        }).start();
     }
 
     private void parseJSONWithJSONObject(final String jsonData) {
@@ -170,6 +168,7 @@ public class LogInActivity extends AppCompatActivity {
                             }
                         });
                         dialog.show();
+                        btnLogIn.setEnabled(true);
                         return;
                     }
                     JSONObject jsonObject_1 = new JSONObject(jsonObject.getString("data"));
