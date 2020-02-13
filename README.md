@@ -4,6 +4,8 @@
 
 ## APP简要介绍
 
+### 未使用第三方库：
+
 ```xml
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
