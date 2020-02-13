@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -87,6 +88,9 @@ public class UserFragment extends Fragment {
         toolbar = view.findViewById(R.id.tb_user);
         tvUserName = view.findViewById(R.id.tv_userName);
         tvSignOut = view.findViewById(R.id.tv_signOut);
+
+        tvUserName.getPaint().setFlags(Paint.FAKE_BOLD_TEXT_FLAG);
+        tvSignOut.getPaint().setFlags(Paint.FAKE_BOLD_TEXT_FLAG);
 
         llUserInfo.setOnClickListener(new View.OnClickListener() {
             @Override

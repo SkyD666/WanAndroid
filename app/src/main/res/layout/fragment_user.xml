@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frguser"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -20,9 +20,11 @@
 
     <LinearLayout
         android:id="@+id/ll_userInfo"
-        android:layout_marginTop="17dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal"
         android:paddingStart="0dp"
@@ -42,8 +44,10 @@
     <LinearLayout
         android:id="@+id/ll_todo"
         android:layout_width="match_parent"
-        android:layout_marginTop="17dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal">
 
@@ -62,8 +66,10 @@
     <LinearLayout
         android:id="@+id/ll_coin"
         android:layout_width="match_parent"
-        android:layout_marginTop="7dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal">
 
@@ -82,8 +88,10 @@
     <LinearLayout
         android:id="@+id/ll_collect"
         android:layout_width="match_parent"
-        android:layout_marginTop="7dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal">
 
@@ -102,8 +110,10 @@
     <LinearLayout
         android:id="@+id/ll_collectWebsite"
         android:layout_width="match_parent"
-        android:layout_marginTop="7dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal">
 
@@ -122,8 +132,10 @@
     <LinearLayout
         android:id="@+id/ll_signOut"
         android:layout_width="match_parent"
-        android:layout_marginTop="17dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
         android:background="@drawable/ll_ripple_color_water"
         android:orientation="horizontal">
 
@@ -136,6 +148,7 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:text="退出登录"
+            android:textColor="@color/colorRed01"
             android:textSize="20sp" />
     </LinearLayout>
 

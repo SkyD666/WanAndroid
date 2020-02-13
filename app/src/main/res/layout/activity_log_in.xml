@@ -27,15 +27,22 @@
         android:paddingBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/tb_logIn"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintVertical_bias="0.38">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/wanandroidlogo" />
 
         <TextView
             android:id="@+id/tv_logIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="登录"
+            android:layout_marginBottom="12dp"
+            android:text="登  录"
             android:textSize="50sp" />
 
         <EditText
@@ -46,9 +53,16 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/button_ripple_circle_border"
+            android:drawableStart="@drawable/user_2_grey"
+            android:drawablePadding="5dp"
             android:hint="请输入用户名"
             android:lines="1"
-            android:textSize="20sp" />
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/et_password"
@@ -58,24 +72,41 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="35dp"
+            android:background="@drawable/button_ripple_circle_border"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="5dp"
             android:hint="请输入密码"
             android:inputType="textPassword"
             android:lines="1"
-            android:textSize="20sp" />
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btn_logIn"
+        <ImageView
+            android:id="@+id/iv_logIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="17dp"
-            android:background="@drawable/button_ripple_circle"
-            android:paddingLeft="70dp"
-            android:paddingTop="12dp"
-            android:paddingRight="70dp"
-            android:paddingBottom="12dp"
-            android:text="登录"
-            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_oval"
+            android:src="@drawable/arrow_1"
+            android:padding="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="没有账号?  "
             android:textSize="20sp" />
 
         <TextView
@@ -83,9 +114,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="注册账号"
+            android:text="点击注册"
+            android:textColor="@color/colorBlue01"
             android:textSize="20sp" />
+    </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

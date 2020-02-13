@@ -9,11 +9,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.skyd.wanandroid.GlobalData;
 import com.skyd.wanandroid.R;
 import com.skyd.wanandroid.tool.ConvertStreamToString;
 import com.skyd.wanandroid.tool.HttpUtil;
@@ -22,8 +21,6 @@ import org.json.JSONObject;
 
 import java.io.DataOutputStream;
 import java.io.InputStream;
-import java.net.CookieHandler;
-import java.net.CookieManager;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -33,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private EditText etRepassword;
-    private Button btnRegister;
+    private ImageView ivRegister;
     private int errorCode;
     private String errorMsg;
 
@@ -46,13 +43,13 @@ public class RegisterActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.et_username);
         etPassword = findViewById(R.id.et_password);
         etRepassword = findViewById(R.id.et_repassword);
-        btnRegister = findViewById(R.id.btn_register);
+        ivRegister = findViewById(R.id.iv_register);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//左侧添加一个默认的返回图标
         getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        ivRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (etUsername.getText().toString().equals("") ||

@@ -5,13 +5,13 @@
         <selector>
             <item android:state_enabled="true">
                 <shape>
-                    <corners android:radius="50dp" />
+                    <corners android:radius="200dp" />
                     <solid android:color="@color/colorBlue01" />
                 </shape>
             </item>
             <item android:state_enabled="false">
                 <shape>
-                    <corners android:radius="50dp" />
+                    <corners android:radius="200dp" />
                     <solid android:color="@color/colorBlue02" />
                 </shape>
             </item>

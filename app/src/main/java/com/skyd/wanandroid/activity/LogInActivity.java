@@ -7,12 +7,12 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +36,7 @@ public class LogInActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private TextView tvRegister;
-    private Button btnLogIn;
+    private ImageView ivLogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,9 @@ public class LogInActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.et_username);
         etPassword = findViewById(R.id.et_password);
         tvRegister = findViewById(R.id.tv_register);
-        btnLogIn = findViewById(R.id.btn_logIn);
+        ivLogIn = findViewById(R.id.iv_logIn);
+
+        tvRegister.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//左侧添加一个默认的返回图标
@@ -63,7 +65,7 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
 
-        btnLogIn.setOnClickListener(new View.OnClickListener() {
+        ivLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (etUsername.getText().toString().equals("") ||
@@ -77,7 +79,7 @@ public class LogInActivity extends AppCompatActivity {
                 }
                 sendRequestWithHttpURLConnection("https://www.wanandroid.com/user/login",
                         etUsername.getText().toString(), etPassword.getText().toString());
-                btnLogIn.setEnabled(false);
+                ivLogIn.setEnabled(false);
             }
         });
     }
@@ -168,7 +170,7 @@ public class LogInActivity extends AppCompatActivity {
                             }
                         });
                         dialog.show();
-                        btnLogIn.setEnabled(true);
+                        ivLogIn.setEnabled(true);
                         return;
                     }
                     JSONObject jsonObject_1 = new JSONObject(jsonObject.getString("data"));

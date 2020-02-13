@@ -29,13 +29,20 @@
         app:layout_constraintTop_toTopOf="@id/tb_register"
         app:layout_constraintVertical_bias="0.4">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/wanandroidlogo" />
+
         <TextView
             android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:text="注册"
+            android:layout_marginBottom="12dp"
+            android:text="注  册"
             android:textSize="50sp" />
 
         <EditText
@@ -46,9 +53,16 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/button_ripple_circle_border"
+            android:drawableStart="@drawable/user_2_grey"
+            android:drawablePadding="5dp"
             android:hint="请输入用户名"
             android:lines="1"
-            android:textSize="20sp" />
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/et_password"
@@ -58,10 +72,17 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/button_ripple_circle_border"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="5dp"
             android:hint="请输入密码"
             android:inputType="textPassword"
             android:lines="1"
-            android:textSize="20sp" />
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/et_repassword"
@@ -71,25 +92,29 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="35dp"
+            android:background="@drawable/button_ripple_circle_border"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="5dp"
             android:hint="请再次输入密码"
             android:inputType="textPassword"
             android:lines="1"
-            android:textSize="20sp" />
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btn_register"
+        <ImageView
+            android:id="@+id/iv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="17dp"
-            android:background="@drawable/button_ripple_circle"
-            android:paddingLeft="70dp"
-            android:paddingTop="12dp"
-            android:paddingRight="70dp"
-            android:paddingBottom="12dp"
-            android:text="注册"
-            android:textColor="@color/colorWhite"
-            android:textSize="20sp" />
+            android:background="@drawable/button_oval"
+            android:padding="15dp"
+            android:src="@drawable/ok_1" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
