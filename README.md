@@ -6,7 +6,7 @@
 
 ### 1.部分界面
 
-![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/首页.gif)![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/体系.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/项目.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/广场.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/我的.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/登录.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/排行榜.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/TODO.jpg)
+![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/首页.gif)![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/体系.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/项目.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/广场.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/我的.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/登录.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/注册.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/排行榜.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/TODO.jpg)
 
 ### 2.主要功能(实现API所提供功能)
 
