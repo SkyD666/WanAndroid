@@ -7,13 +7,13 @@
             <item android:state_enabled="true">
                 <shape android:shape="oval">
                     <corners android:radius="50dp" />
-                    <solid android:color="@color/colorBlue01" />
+                    <solid android:color="@color/colorBlue03" />
                 </shape>
             </item>
             <item android:state_enabled="false">
                 <shape android:shape="oval">
                     <corners android:radius="50dp" />
-                    <solid android:color="@color/colorBlue01" />
+                    <solid android:color="@color/colorBlue03" />
                 </shape>
             </item>
         </selector>

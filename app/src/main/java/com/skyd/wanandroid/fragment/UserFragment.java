@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.skyd.wanandroid.GlobalData;
 import com.skyd.wanandroid.R;
+import com.skyd.wanandroid.activity.AboutActivity;
 import com.skyd.wanandroid.activity.CoinActivity;
 import com.skyd.wanandroid.activity.CollectActivity;
 import com.skyd.wanandroid.activity.CollectWebsiteActivity;
@@ -50,6 +51,7 @@ public class UserFragment extends Fragment {
     private LinearLayout llCollect;
     private LinearLayout llCollectWebsite;
     private LinearLayout llTODO;
+    private LinearLayout llAbout;
 
     public UserFragment() {
         // Required empty public constructor
@@ -85,12 +87,21 @@ public class UserFragment extends Fragment {
         llCoin = view.findViewById(R.id.ll_coin);
         llCollect = view.findViewById(R.id.ll_collect);
         llCollectWebsite = view.findViewById(R.id.ll_collectWebsite);
+        llAbout = view.findViewById(R.id.ll_about);
         toolbar = view.findViewById(R.id.tb_user);
         tvUserName = view.findViewById(R.id.tv_userName);
         tvSignOut = view.findViewById(R.id.tv_signOut);
 
         tvUserName.getPaint().setFlags(Paint.FAKE_BOLD_TEXT_FLAG);
         tvSignOut.getPaint().setFlags(Paint.FAKE_BOLD_TEXT_FLAG);
+
+        llAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AboutActivity.class);
+                startActivity(intent);
+            }
+        });
 
         llUserInfo.setOnClickListener(new View.OnClickListener() {
             @Override
