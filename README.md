@@ -4,6 +4,21 @@
 
 ## APP简要介绍
 
+```xml
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+}
+```
+
 ### 1.部分界面
 
 ![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/首页.gif)![image](https://github.com/SkyD666/WanAndroid/raw/master/ScreenShots/体系.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/项目.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/广场.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/我的.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/登录.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/注册.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/排行榜.jpg)![image](https://github.com/SkyD666/WanAndroid/blob/master/ScreenShots/TODO.jpg)
