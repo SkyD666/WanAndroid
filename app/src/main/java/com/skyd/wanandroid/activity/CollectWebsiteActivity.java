@@ -59,7 +59,7 @@ public class CollectWebsiteActivity extends AppCompatActivity {
             case R.id.it_edit:
                 if (clickType == 0) {
                     clickType = 1;
-                    flowLayout.setBackgroundColor(Color.YELLOW);
+                    flowLayout.setBackgroundColor(flowLayout.getResources().getColor(R.color.DarkSeaGreen));
                     item.setTitle("完成“编辑”操作");
                 } else if (clickType == 1) {
                     clickType = 0;
@@ -72,7 +72,7 @@ public class CollectWebsiteActivity extends AppCompatActivity {
             case R.id.it_delete:
                 if (clickType == 0) {
                     clickType = 2;
-                    flowLayout.setBackgroundColor(Color.RED);
+                    flowLayout.setBackgroundColor(flowLayout.getResources().getColor(R.color.Salmon));
                     item.setTitle("完成“删除操作”");
                 } else if (clickType == 2) {
                     clickType = 0;
