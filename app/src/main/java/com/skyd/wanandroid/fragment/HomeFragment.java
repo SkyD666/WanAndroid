@@ -300,7 +300,7 @@ public class HomeFragment extends Fragment {
                             result[5] = jsonObject_1.getString("superChapterName");
                             result[6] = jsonObject_1.getString("chapterName");
                             int id = jsonObject_1.getInt("id");
-                            Log.d("---", topArticleCount + "");
+                            //Log.d("---", topArticleCount + "");
                             showResponse(result, id, 1, scrollToPos, i + addItemFrom,
                                     i + 1 == addCount ? 1 : 0);
                         }
@@ -314,7 +314,7 @@ public class HomeFragment extends Fragment {
                         JSONObject jsonObject = new JSONObject(response);
                         JSONObject jsonObject_1 = new JSONObject(jsonObject.getString("data"));
                         JSONArray jsonArray = new JSONArray(jsonObject_1.getString("datas"));
-                        int addCount = jsonObject_1.getInt("size");
+                        int addCount = jsonArray.length();
                         for (int i = 0; i < addCount; i++) {
                             JSONObject jsonObject_2 = jsonArray.getJSONObject(i);
                             String[] result = new String[8];
@@ -327,7 +327,7 @@ public class HomeFragment extends Fragment {
                             result[5] = jsonObject_2.getString("superChapterName");
                             result[6] = jsonObject_2.getString("chapterName");
                             int id = jsonObject_2.getInt("id");
-
+                            //Log.d("---",addCount + " " + (i + 1));
                             showResponse(result, id, 0, scrollToPos, i + addItemFrom,
                                     i + 1 == addCount ? 1 : 0);
                         }
@@ -432,7 +432,10 @@ public class HomeFragment extends Fragment {
                 , chapterName, isTop, id));
 
         adapter.notifyItemInserted(addPosition);
-        recyclerView.scrollToPosition(scrollToPos);
+        if (isTop == 0 && refreshCount == 1)
+            recyclerView.scrollToPosition(0);
+        else
+            recyclerView.scrollToPosition(scrollToPos);
 
         if (isTop == 0 && finish == 1) isFresh = 0;
     }
